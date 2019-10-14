@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Contact Us</title>
+
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css" />
+  <link rel="stylesheet" href="style1.css">
+  <link href="css/grayscale.min.css" rel="stylesheet">
+</head>
+<body id="page-top">
+
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand js-scroll-trigger" href="#page-top"></a>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="index.html">Back</a>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+<body>
+  <div class="container">
+    <h1 class="brand" ><span>Let's</span> Get Introduced</h1>
+    <div class="wrapper" id="submission-form">
+      <div class="company-info">
+        <h3>Contact Details</h3>
+        <ul>
+
+          <!-- <li><i class="fa fa-road"><strong>“MOLLIKA KUNJA”</strong>; House No:70/1; Road:Torun Shangha Road; Village:North Hajeeganj; Police Station:Fatullah; Post and District:Narayanganj</p></li>   -->
+          <li><i class="fa fa-road"></i><strong>“Dance PUTUL”</strong>;
+            </p>
+          </li>
+
+          <li><i class="fa fa-phone"></i> 01199010080</p>
+          </li>
+
+          <li><i class="fa fa-envelope"></i> asima.oshin1998@gmail.com</li>
+        </ul>
+      </div>
+      <div class="contact">
+        <h3>Email Us</h3>
+        <div class="alert">Your message has been sent, Redirecting to Home</div>
+        <form id="contactForm">
+          <p>
+            <label>Name</label>
+            <input type="text" name="name" id="name" required>
+          </p>
+          <p>
+            <label>Company</label>
+            <input type="text" name="company" id="company">
+          </p>
+          <p>
+            <label>Email Address</label>
+            <input type="email" name="email" id="email" required>
+          </p>
+          <p>
+            <label>Phone Number</label>
+            <input type="text" name="phone" id="phone">
+          </p>
+          <p class="full">
+            <label>Message</label>
+            <textarea name="message" rows="5" id="message"></textarea>
+          </p>
+          <p class="full">
+            <button type="submit" id="submit">Submit</button>
+          </p>
+        </form>
+      </div>
+    </div>
+
+    <div id="adminTable" style="margin-top:5%;display: none;">
+      <table style="border:1px solid" id="dataTable" width="100%" cellspacing="0">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Company</th>
+            <th>Message</th>
+          </tr>
+        </thead>
+        <tbody style="text-align: center;" id="dataTable">
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.2.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/6.1.0/firebase-database.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.2.0/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.2.0/firebase-firestore.js"></script>
+  <script>
+  var config = {
+      apiKey: "AIzaSyBrRzWkRST39XTkNrRapSWSwCn5moglgUs",
+      authDomain: "danceputul48.firebaseapp.com",
+      databaseURL: "https://danceputul48.firebaseio.com",
+      projectId: "danceputul48",
+      storageBucket: "danceputul48.appspot.com",
+      messagingSenderId: "732151917610",
+      appId: "1:732151917610:web:eeea255c584b224a39e753",
+      measurementId: "G-DM0MF417E6"
+    };
+  firebase.initializeApp(config);
+
+  </script>
+  <script src="js/contact.js"></script>
+</body>
+
+</html>
